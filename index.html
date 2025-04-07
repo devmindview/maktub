@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maktub Logistics Services</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Aos animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <img src="assets/images/preloader.gif" alt="Truck" class="truck">
+        <!-- <div class="loading-text">Loading...</div> -->
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container nav-container">
+            <!-- Left: Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo">
+            </a>
+
+            <!-- Right: Mobile Toggle Button -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Right-aligned Navigation Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <video autoplay muted loop class="hero-video">
+                <source src="assets/video/herofinal.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="hero-content">
+                <h1 data-aos="fade-right">Experience the Power <br> of Logistics</h1>
+                <p data-aos="fade-right">At Maktub, we redefine efficiency with cutting-edge logistics
+                    solutions tailored to your needs.</p>
+                <a data-aos="fade-up-left" href="#home-about" class="hero-btn">Get Started </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="home-about">
+        <div class="container about-container">
+            <div class="row align-items-center">
+
+
+                <!-- Text Content -->
+                <div class="col-lg-6 text-content">
+                    <h6 class="about-subtitle" data-aos="fade-up">About Us</h6>
+                    <h2 class="about-title" data-aos="fade-up">Driving Efficiency, Delivering Excellence</h2>
+                    <p class="about-description" data-aos="fade-up">
+                        We provide seamless, technology-driven logistics solutions that
+                        keep your supply chain moving efficiently. Our expertise spans
+                        across industries, ensuring safe, fast, and reliable transportation
+                        worldwide.
+                    </p>
+
+                    <!-- List of services -->
+                    <div class="about-list" data-aos="fade-up">
+                        <ul>
+                            <li><i class="bi bi-airplane"></i> Air Freight</li>
+                            <li><i class="bi bi-truck"></i> Land Freight</li>
+                            <li><i class="bi bi-water"></i> Ocean Freight</li>
+                        </ul>
+                        <ul>
+                            <li><i class="bi bi-box-seam"></i> Warehousing</li>
+                            <li><i class="bi bi-clipboard-check"></i> Customs Clearance</li>
+                            <li><i class="bi bi-globe"></i> Worldwide Courier</li>
+                        </ul>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <a href="about.html" class="btn about-btn" data-aos="fade-up-left">View More
+                    </a>
+                </div>
+                <!-- Image Content (First on Desktop, Second on Mobile) -->
+                <div class="col-lg-6 image-content">
+                    <div class="image-wrapper">
+                        <img data-aos="fade-right" src="assets/images/img.jpg" alt="about-img" class="main-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section class="service-section">
+        <div class="container" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <h6 class="service-subtitle" data-aos="fade-in">Our Services</h6>
+        <!-- <h2 data-aos="fade-up">Provide Efficient <span class="span-service">Logistics</span> Solutions</h2> -->
+        </div>
+        <div class="container service-container">
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="assets/images/airplane-min.webp" alt="Air freight">
+                    <span class="service-icon"><i class="bi bi-airplane-fill"></i></span>
+                    <span class="service-number"></span>
+                </div>
+                <div class="service-content">
+                    <a class="text-decoration-none" href="services.html">
+                        <h4>Air freight</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="assets/images/ship-min.webp" alt="Ocean Freight">
+                    <span class="service-icon"><i class="bi bi-water"></i></span>
+                    <span class="service-number"></span>
+                </div>
+                <div class="service-content">
+
+                    <a class="text-decoration-none" href="services.html">
+                        <h4>Ocean Freight</h4>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="assets/images/warehouse-min.webp" alt="Warehousing">
+                    <span class="service-icon"><i class="bi bi-box-seam-fill"></i></span>
+                    <span class="service-number"></span>
+                </div>
+                <div class="service-content">
+
+                    <a class="text-decoration-none" href="services.html">
+                        <h4>Warehousing</h4>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="assets/images/truckroad-min.webp" alt="Land Freight">
+                    <span class="service-icon"><i class="bi bi-truck-front-fill"></i></span>
+                    <span class="service-number"></span>
+                </div>
+                <div class="service-content">
+
+                    <a class="text-decoration-none" href="services.html">
+                        <h4>Land Freight</h4>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="assets/images/customs-min.webp" alt="Customs Clearance">
+                    <span class="service-icon"><i class="bi bi-clipboard-check-fill"></i></span>
+                    <span class="service-number"></span>
+                </div>
+                <div class="service-content">
+
+                    <a class="text-decoration-none" href="services.html">
+                        <h4>Customs Clearance</h4>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="assets/images/worldwide-min.webp" alt="Worldwide Courier">
+                    <span class="service-icon"><i class="bi bi-globe-americas"></i></span>
+                    <span class="service-number"></span>
+                </div>
+                <div class="service-content">
+
+                    <a class="text-decoration-none" href="services.html">
+                        <h4>Worldwide Courier</h4>
+                    </a>
+
+                </div>
+            </div>
+            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(251,100,175)"
+                stroke-opacity="1" stroke-width="20"
+                d=" M159.80499267578125,401.6650085449219 C159.80499267578125,401.6650085449219 -176.23500061035156,204.0749969482422 -176.23500061035156,204.0749969482422 C-176.23500061035156,204.0749969482422 -285.81500244140625,138.99400329589844 -285.81500244140625,138.99400329589844 C-285.81500244140625,138.99400329589844 34.51499938964844,-45.14500045776367 34.51499938964844,-45.14500045776367 C54.53499984741211,-56.8650016784668 79.51499938964844,-55.98500061035156 98.66500091552734,-42.904998779296875 C98.66500091552734,-42.904998779296875 155.55499267578125,-4.025000095367432 155.55499267578125,-4.025000095367432 C174.90499877929688,9.194999694824219 200.18499755859375,9.9350004196167 220.27499389648438,-2.115000009536743 C220.27499389648438,-2.115000009536743 411.385009765625,-130.10499572753906 411.385009765625,-130.10499572753906 C411.385009765625,-130.10499572753906 148.51499938964844,-278.5950012207031 148.51499938964844,-278.5950012207031 C129.28500366210938,-289.67498779296875 105.51499938964844,-289.2349853515625 86.71499633789062,-277.4549865722656 C86.71499633789062,-277.4549865722656 -110.20500183105469,-155.38499450683594 -110.20500183105469,-155.38499450683594 C-110.20500183105469,-155.38499450683594 -414.30499267578125,-331.6650085449219 -414.30499267578125,-331.6650085449219">
+            </path>
+        </div>
+    </section>
+
+    <!-- details-section -->
+    <section class="details-section">
+        <div class="container details-container">
+            <div class="details-content">
+                <h2 data-aos="fade-in">Why Maktub Stands out</h2>
+                <p data-aos="fade-up">
+                    We are committed to redefining the logistics experience with
+                    technology-driven, efficient, and reliable solutions. Our expertise
+                    spans across industries, ensuring seamless, secure, and timely
+                    transportation that keeps your supply chain moving without
+                    disruptions.
+                </p>
+                <p data-aos="fade-up">
+                    With a customer-first approach, we offer real-time tracking,
+                    customized solutions, and cost-effective services tailored to your
+                    business needs. Backed by years of industry expertise and a
+                    dedicated team, we ensure smooth operations from start to finish,
+                    making us the trusted choice for businesses worldwide.
+                </p>
+                <a href="contact.html" class="detail-btn" data-aos="fade-up-left">Contact Us ↗</a>
+            </div>
+            <div class="details-image">
+                <!-- <img src="https://img.genial.ly/60ef11e790ed4a0ff835b724/b18e627e-6083-43b1-836c-18a7d29ce631.gif"
+                    alt="Workers"> -->
+                   
+                    
+                   
+            </div>
+        </div>
+    </section>
+    <!-- gradient section -->
+    <section class="mission-vision-section">
+        <div class="mission-vision-container">
+            <div class="mission-box">
+                <h2>Mission</h2>
+                <p data-aos="fade-in">
+                    At Maktub Logistics, our mission is to provide seamless,
+                    technology-driven logistics solutions that empower businesses with
+                    efficiency, reliability, and speed. We are committed to ensuring safe
+                    and timely transportation while optimizing supply chain operations
+                    for businesses of all sizes.
+                </p>
+            </div>
+            <div class="vision-box">
+                <h2>Vision</h2>
+                <p data-aos="fade-in">
+                    We envision a future where logistics is smarter, faster, and more
+                    connected. By leveraging cutting-edge technology and innovative
+                    solutions, we strive to build a sustainable and efficient global supply
+                    chain, enabling businesses to thrive in an ever-evolving marketplace.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section">
+        <div class="container contact-container">
+            <!-- Left Section (Text) -->
+            <div class="contact-info">
+                <h2 data-aos="fade-in">Get in Touch</h2>
+                <p data-aos="fade-up">
+                    Have any questions or need assistance? Feel free to reach out to us.
+                    Our team is here to help you with your inquiries.
+                </p>
+                <p data-aos="fade-up"><strong>Email:</strong> info@maktublogistics.com</p>
+                <p data-aos="fade-up"><strong>Phone:</strong> +91 95622 04489</p>
+                <p data-aos="fade-up"><strong>Phone:</strong> +91 80890 19104</p>
+            </div>
+
+            <!-- Right Section (Form) -->
+            <div class="contact-form">
+                <form id="googleForm"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfHp2xM_-E2l-MaWy6q10Iw7EfZ_KPVuwklMIfj3CA-OpTjcA/formResponse"
+                    method="POST" target="hidden_iframe" onsubmit="return handleSubmit();">
+                    <div class="form-group">
+                        <input type="text" name="entry.1852117964" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" pattern="\d{10}" maxlength="10"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')" name="entry.4755967"
+                            placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="entry.1109733780" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="entry.554389184" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+                <!-- Hidden iframe to submit without redirect -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="handleResponse()"></iframe>
+            </div>
+                        <!-- Popup Modal -->
+                        <div id="popup" class="popup hidden">
+                            <div class="popup-content">
+                                <span id="popup-message">Message sent!</span>
+                                <button onclick="closePopup()" class="popup-close">Close</button>
+                            </div>
+                        </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <!-- Top Title -->
+            <div class="footer-header d-flex align-items-center justify-content-between">
+                <img src="assets/images/logo_white.svg" alt="Maktub Logistics">
+                <button class="brochure-btn">Brochure<i class="bi bi-download ms-1"></i></button>
+            </div>
+
+            <!-- Footer Grid Layout -->
+            <div class="footer-grid">
+                <!-- Left & Center Box (Same Background) -->
+                <div class="footer-box footer-main">
+                    <!-- Left Links -->
+                    <div class="footer-nav">
+                        <ul class="footer-links">
+                            <li><i class="bi bi-dot"></i> <a href="index.html">Home</a></li>
+                            <li><i class="bi bi-dot"></i> <a href="about.html">About</a></li>
+                            <li><i class="bi bi-dot"></i> <a href="services.html">Services</a></li>
+                            <li><i class="bi bi-dot"></i> <a href="contact.html">Contact</a></li>
+                            <li><i class="bi bi-dot"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+
+                        </ul>
+                        <h4>Stay Connected</h4>
+                        <div class="footer-social">
+                            <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Center Logo & Contact -->
+                    <div class="footer-center">
+                        <h4>Connect With Us!</h4>
+                        <p class="mb-2"><i class="bi bi-envelope mb-0"></i> info@maktublogistics.com</p>
+                        <p class="mb-2"><i class="bi bi-telephone"></i> +91 95622 04489</p>
+                        <p><i class="bi bi-telephone"></i> +91 80890 19104</p>
+
+                    </div>
+                </div>
+
+                <!-- Right Section: Location (Same Height) -->
+                <div class="footer-box footer-location">
+                    <strong class="mb-1">MAKTUB LOGISTICS SERVICES LLP</strong>
+                    <h5><i class="bi bi-geo-alt"></i> </h5>
+                    <p>Regus - Floor 10, Nippon Q1 mall, NH66, Palarivattom, Vennala<br>Ernakulam, Kerala,
+                        India,<br>682028</p>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <p>© Maktub Logistics Services. All Rights Reserved 2025</p>
+                <a class="text-decoration-none" href="https://mindviewcreative.com" target="_blank">Developed by -
+                    MindviewCreative</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- back to top -->
+    <button id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- whats app -->
+    <img id="wtsapp" class="wtsapp-icon" src="assets/images/icons8-whatsapp.svg" alt="wtsapp">
+
+
+    <!-- preloader -->
+    <script>
+        // Simulate loading
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                document.getElementById("preloader").classList.add("hide");
+                document.getElementById("content").style.display = "block";
+            }, 500);
+        });
+    </script>
+
+</body>
+<!-- form popup -->
+<script>
+    let formSubmitted = false;
+
+    function handleSubmit() {
+        formSubmitted = true;
+        setTimeout(() => {
+            if (formSubmitted) {
+                showPopup("Message sent successfully!");
+                document.getElementById("googleForm").reset();
+            }
+        }, 1000); // Wait to ensure iframe loads
+        return true;
+    }
+
+    function handleResponse() {
+        if (formSubmitted) {
+            // This will trigger on iframe load after submission
+            showPopup("Message sent successfully!");
+            document.getElementById("googleForm").reset();
+            formSubmitted = false;
+        }
+    }
+
+    function showPopup(message) {
+        const popup = document.getElementById("popup");
+        document.getElementById("popup-message").innerText = message;
+        popup.classList.remove("hidden");
+        popup.classList.add("show");
+    }
+
+    function closePopup() {
+        const popup = document.getElementById("popup");
+        popup.classList.remove("show");
+        popup.classList.add("hidden");
+    }
+</script>
+
+<!-- Bootstrap Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/main.js"></script>
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

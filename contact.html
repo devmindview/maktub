@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us | Maktub Logistics Services</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/pages.css">
+
+    <!-- Aos animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container nav-container">
+            <!-- Left: Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo">
+            </a>
+
+            <!-- Right: Mobile Toggle Button -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Right-aligned Navigation Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Section -->
+    <div class="contact-header-page">
+        <div class="container">
+            <h1 data-aos="fade-in">Contact Us</h1>
+            <p data-aos="fade-in">Your Trusted Partner in Logistics</p>
+        </div>
+    </div>
+
+    <!-- Contact - section -->
+    <!-- Contact section -->
+    <section class="contact-section" style="min-height: 80vh; max-height: fit-content;">
+        <div class="container contact-container">
+            <!-- Left Section (Text) -->
+            <div class="contact-info">
+                <h2 data-aos="fade-right">Get in Touch</h2>
+                <p data-aos="fade-in">
+                    Have any questions or need assistance? Feel free to reach out to us.
+                    Our team is here to help you with your inquiries and provide the best possible support.
+                </p>
+                <p data-aos="fade-in">
+                    You can contact us via email, phone, or visit our office.
+                    We are available during business hours and always happy to connect with you.
+                </p>
+                <p><strong>Email:</strong> info@maktublogistics.com</p>
+                <p><strong>Phone:</strong> +91 95622 04489</p>
+                <p><strong>Phone:</strong> +91 80890 19104</p>
+                <p><strong>Location:</strong> Maktub Logistics Services LLP ,Regus - Floor 10, Nippon Q1 mall, NH66,
+                    Palarivattom, Vennala
+                    Ernakulam, Kerala, India,
+                    682028</p>
+            </div>
+
+
+
+            <!-- Right Section (Form) -->
+            <div class="contact-form">
+                <form id="googleForm"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfHp2xM_-E2l-MaWy6q10Iw7EfZ_KPVuwklMIfj3CA-OpTjcA/formResponse"
+                    method="POST" target="hidden_iframe" onsubmit="return handleSubmit();">
+                    <div class="form-group">
+                        <input type="text" name="entry.1852117964" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" pattern="\d{10}" maxlength="10"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')" name="entry.4755967"
+                            placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="entry.1109733780" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="entry.554389184" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+                <!-- Hidden iframe to submit without redirect -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="handleResponse()"></iframe>
+            </div>
+            <!-- Popup Modal -->
+            <div id="popup" class="popup hidden">
+                <div class="popup-content">
+                    <span id="popup-message">Message sent!</span>
+                    <button onclick="closePopup()" class="popup-close">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <!-- Top Title -->
+            <div class="footer-header d-flex align-items-center justify-content-between">
+                <img src="assets/images/logo_white.svg" alt="Maktub Logistics">
+                <button class="brochure-btn">Brochure<i class="bi bi-download ms-1"></i></button>
+            </div>
+
+            <!-- Footer Grid Layout -->
+            <div class="footer-grid">
+                <!-- Left & Center Box (Same Background) -->
+                <div class="footer-box footer-main">
+                    <!-- Left Links -->
+                    <div class="footer-nav">
+                        <ul class="footer-links">
+                            <li><i class="bi bi-dot"></i> <a href="index.html">Home</a></li>
+                            <li><i class="bi bi-dot"></i> <a href="about.html">About</a></li>
+                            <li><i class="bi bi-dot"></i> <a href="services.html">Services</a></li>
+                            <li><i class="bi bi-dot"></i> <a href="contact.html">Contact</a></li>
+                            <li><i class="bi bi-dot"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+
+                        </ul>
+                        <h4>Stay Connected</h4>
+                        <div class="footer-social">
+                            <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Center Logo & Contact -->
+                    <div class="footer-center">
+                        <h4>Connect With Us!</h4>
+                        <p class="mb-2"><i class="bi bi-envelope mb-0"></i> info@maktublogistics.com</p>
+                        <p class="mb-2"><i class="bi bi-telephone"></i> +91 95622 04489</p>
+                        <p><i class="bi bi-telephone"></i> +91 80890 19104</p>
+
+                    </div>
+                </div>
+
+                <!-- Right Section: Location (Same Height) -->
+                <div class="footer-box footer-location">
+                    <strong class="mb-1">MAKTUB LOGISTICS SERVICES LLP</strong>
+                    <h5><i class="bi bi-geo-alt"></i> </h5>
+                    <p>Regus - Floor 10, Nippon Q1 mall, NH66, Palarivattom, Vennala<br>Ernakulam, Kerala,
+                        India,<br>682028</p>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <p>© Maktub Logistics Services. All Rights Reserved 2025</p>
+                <a class="text-decoration-none" href="https://mindviewcreative.com" target="_blank">Developed by -
+                    MindviewCreative</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+<!-- form popup -->
+<script>
+    let formSubmitted = false;
+
+    function handleSubmit() {
+        formSubmitted = true;
+        setTimeout(() => {
+            if (formSubmitted) {
+                showPopup("Message sent successfully!");
+                document.getElementById("googleForm").reset();
+            }
+        }, 1000); // Wait to ensure iframe loads
+        return true;
+    }
+
+    function handleResponse() {
+        if (formSubmitted) {
+            // This will trigger on iframe load after submission
+            showPopup("Message sent successfully!");
+            document.getElementById("googleForm").reset();
+            formSubmitted = false;
+        }
+    }
+
+    function showPopup(message) {
+        const popup = document.getElementById("popup");
+        document.getElementById("popup-message").innerText = message;
+        popup.classList.remove("hidden");
+        popup.classList.add("show");
+    }
+
+    function closePopup() {
+        const popup = document.getElementById("popup");
+        popup.classList.remove("show");
+        popup.classList.add("hidden");
+    }
+</script>
+
+<!-- Bootstrap Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/main.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

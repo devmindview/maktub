@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    scrollbar-width: none;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Container */
+/* .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+} */
+
+/* Header Section */
+.about-header-page {
+    background: url('/assets/images/world-min.webp') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-header-page h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.about-header-page p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* About Section */
+.about-section-page {
+    padding: 60px 20px;
+    min-height: 80vh;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.about-text p {
+    font-size: 1.3rem;
+    text-align: justify;
+    hyphens: auto;
+    text-justify: inter-word;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottom Counter Section */
+
+.bottom-counter {
+    background: transparent;
+    padding: 50px 20px;
+}
+
+.bottom-counter .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #f6f6f6; 
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.counter-box {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.counter-box h3 {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.counter-box p {
+    font-size: 1.1rem;
+    color: rgb(21, 21, 21);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bottom-counter .container {
+        flex-direction: column;
+    }
+    .about-header-page h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .about-header-page p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    .about-text p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+/* ========================== Services - Page ======================== */
+
+/* Services Header */
+.services-header {
+    background: url('/assets/images/world-min.webp') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.services-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.services-header p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Services Overview */
+.services-overview {
+    padding: 50px 20px;
+    background: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.service-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    color: #272761;
+    font-weight: 600;
+}
+
+.service-box p {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    
+}
+
+/* =================== Detailed Service Sections ================== */
+.service-details {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.service-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.service-detail.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-detail img {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.detail-text {
+    width: 50%;
+    max-width: 500px;
+}
+
+.detail-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight:600 ;
+}
+
+.detail-text p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .services-header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .services-header p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .service-detail, .service-detail.reverse {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 box per row */
+    }
+    .service-detail img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .detail-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .detail-text h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight:600 ;
+    }
+    
+    .detail-text p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+}
+
+
+
+/* ========================== Contact - Page ======================== */
+
+
+/* Header Section */
+.contact-header-page {
+    background: url('/assets/images/world-min.webp') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-header-page h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-header-page p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px){
+    .contact-header-page h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .contact-header-page p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+}
