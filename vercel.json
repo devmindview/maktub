@@ -1,5 +1,9 @@
 {
   "redirects": [
-    { "source": "/", "has": [{ "host": "maktublogistics.com" }], "destination": "https://www.maktublogistics.com", "permanent": true }
+    {
+      "source": "/",
+      "destination": "https://www.maktublogistics.com",
+      "permanent": true
+    }
   ]
 }
